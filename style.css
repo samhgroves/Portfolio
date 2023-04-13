@@ -1,0 +1,128 @@
+body {
+  background-color: #f1ffe7;
+  font-family: "futura";
+}
+
+#name {
+  color: #03312e;
+  margin-left: 10rem;
+  margin-top: 3rem;
+  font-size: 75px;
+}
+
+#title {
+  margin-left: 10rem;
+  margin-top: -4rem;
+  font-size: 50px;
+  color: #ff1053;
+}
+
+#content {
+  display: flex;
+}
+#buttons {
+  display: flex;
+  flex-direction: column;
+  margin-right: 8rem;
+  margin-top: 0rem;
+  margin-left: 5rem;
+
+  border-radius: 40px;
+}
+.button {
+  margin: 4rem;
+  width: 40rem;
+  background-color: #66c7f4;
+  border: none;
+  border-radius: 50px;
+  height: 5rem;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.button:hover {
+  background-color: #037171;
+}
+#splash-img {
+  width: 40%;
+  margin-top: -3rem;
+}
+
+.section-header {
+  text-align: center;
+  font-size: 50px;
+  color: #ff1053;
+}
+
+#work,
+#about-content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.project {
+  border: 3px solid black;
+  width: 40rem;
+  height: 20rem;
+  margin: 2rem;
+}
+
+#portrait-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40rem;
+}
+
+#portrait {
+  height: 500px;
+  width: 500px;
+  object-fit: cover;
+  border-radius: 300px;
+}
+
+#bio {
+  height: 40rem;
+}
+
+#bio > h2 {
+  font-size: 40px;
+  color: #66c7f4;
+}
+
+#bio > p {
+  font-size: 25px;
+}
+
+@media screen and (max-width: 1000px) {
+  #name {
+    text-align: center;
+    font-size: 50px;
+    margin: 0rem;
+  }
+  #title {
+    text-align: center;
+    margin: 0rem;
+    font-size: 30px;
+  }
+  #content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem;
+  }
+  .button {
+    max-width: 20rem;
+  }
+  #splash-img {
+    width: 80%;
+  }
+}
