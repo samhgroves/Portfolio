@@ -14,39 +14,119 @@
     </div>
     <div id="content">
       <div id="buttons">
-        <button class="button">about</button>
-        <button class="button">work</button>
-        <button class="button">contact</button>
+        <button class="button" id="navbtn">about</button>
+        <button class="button" id="navbtn">work</button>
       </div>
       <img id="splash-img" src="./images/home.svg" />
     </div>
     <section id="about">
       <h1 class="section-header">about</h1>
       <div id="about-content">
-        <div id="portrait-container" class="project">
+        <div id="portrait-container">
           <img id="portrait" src="/images/2022portrait.png" alt="Portrait" />
         </div>
-        <div id="bio" class="project">
+        <div id="bio">
           <h2>Hi, I'm Sam.</h2>
           <p>
             As a passionate developer with a keen eye for design, I thrive on
             finding innovative solutions to complex technical challenges. With a
-            wealth of experience in programming, UI/UX design, and web
+            variety of experience in programming, UI/UX design, and web
             development, I bring a versatile skillset to every project I work
             on. When I'm not diving into the latest technology, I enjoy
             exploring my creative side through photography and film. Let's work
             together to bring your ideas to life.
           </p>
+          <div id="bio-buttons">
+            <button
+              class="biobtn"
+              onClick="parent.location='mailto:samuelhgroves@gmail.com'"
+            >
+              email me
+            </button>
+            <button
+              onclick="window.location.href='https://github.com/samhgroves';"
+            >
+              my github
+            </button>
+          </div>
+        </div>
+        <div id="skills">
+          <img src="images/JS.svg" alt="Javascript Logo" class="skill-logo" />
+          <img
+            src="images/React.svg"
+            alt="Javascript Logo"
+            class="skill-logo"
+          />
+          <img src="images/sass.svg" alt="Javascript Logo" class="skill-logo" />
+          <img src="images/Git.svg" alt="Javascript Logo" class="skill-logo" />
+          <img
+            src="images/webpack.svg"
+            alt="Javascript Logo"
+            class="skill-logo"
+          />
+          <img src="/images/Nodejs.svg" alt="NodeJs" class="skill-logo" />
+          <img
+            src="images/Illustrator.svg"
+            alt="Javascript Logo"
+            class="skill-logo"
+          />
+          <img
+            src="images/figma_logo.svg"
+            alt="Javascript Logo"
+            class="skill-logo"
+          />
         </div>
       </div>
     </section>
     <section>
-      <h1 class="section-header">Work</h1>
+      <h1 class="section-header">work</h1>
       <div id="work">
-        <div class="project"></div>
-        <div class="project"></div>
-        <div class="project"></div>
-        <div class="project"></div>
+        <div class="project">
+          <h2>Pixel Art maker</h2>
+          <img
+            onclick="window.location.href='https://samhgroves.github.io/pixel-art/';"
+            src="/images/pixel-art.png"
+            alt="Pixel Art Image"
+            class="project-image"
+          />
+          <button
+            class="projectbtn"
+            onclick="window.location.href='https://samhgroves.github.io/pixel-art/';"
+          >
+            Live Site
+          </button>
+          <button class="projectbtn">GitHub</button>
+        </div>
+        <div class="project">
+          <h2>Pixel Art maker</h2>
+          <img
+            src="/images/pixel-art.png"
+            alt="Pixel Art Image"
+            class="project-image"
+          />
+          <button class="projectbtn">Live Site</button>
+          <button class="projectbtn">GitHub</button>
+        </div>
+        <div class="project">
+          <h2>Pixel Art maker</h2>
+          <img
+            src="/images/pixel-art.png"
+            alt="Pixel Art Image"
+            class="project-image"
+          />
+          <button class="projectbtn">Live Site</button>
+          <button class="projectbtn">GitHub</button>
+        </div>
+        <div class="project">
+          <h2>Pixel Art maker</h2>
+          <img
+            src="/images/pixel-art.png"
+            alt="Pixel Art Image"
+            class="project-image"
+          />
+          <button class="projectbtn">Live Site</button>
+          <button class="projectbtn">GitHub</button>
+        </div>
       </div>
     </section>
   </body>
