@@ -173,7 +173,7 @@ a {
   align-items: center;
 }
 
-#bio-buttons > button:hover {
+#bio-buttons > a:hover {
   background-color: #037171;
   cursor: pointer;
 }
