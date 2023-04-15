@@ -8,14 +8,34 @@
     <link href="./style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
+    <header id="header" class="header">
+      <h3>Sam Groves</h3>
+      <div class="headerlinks">
+        <a onClick="parent.location='mailto:samuelhgroves@gmail.com'">email</a>
+        <a href="https://github.com/samhgroves">github</a>
+      </div>
+    </header>
+
     <div>
       <h1 id="name">SAM GROVES</h1>
       <h2 id="title">WEB DEVELOPER</h2>
     </div>
     <div id="content">
       <div id="buttons">
-        <button class="button" id="navbtn">about</button>
-        <button class="button" id="navbtn">work</button>
+        <button
+          class="button"
+          id="navbtn"
+          onClick="document.getElementById('about').scrollIntoView();"
+        >
+          about
+        </button>
+        <button
+          class="button"
+          id="navbtn"
+          onClick="document.getElementById('worksection').scrollIntoView();"
+        >
+          work
+        </button>
       </div>
       <img id="splash-img" src="./images/home.svg" />
     </div>
@@ -37,17 +57,15 @@
             together to bring your ideas to life.
           </p>
           <div id="bio-buttons">
-            <button
+            <a
               class="biobtn"
               onClick="parent.location='mailto:samuelhgroves@gmail.com'"
             >
               email me
-            </button>
-            <button
-              onclick="window.location.href='https://github.com/samhgroves';"
-            >
+            </a>
+            <a class="biobtn" href="https://github.com/samhgroves">
               my github
-            </button>
+            </a>
           </div>
         </div>
         <div id="skills">
@@ -78,57 +96,103 @@
         </div>
       </div>
     </section>
-    <section>
-      <h1 class="section-header">work</h1>
+    <section id="worksection">
+      <h1 class="section-header" id="workheader">work</h1>
       <div id="work">
         <div class="project">
           <h2>Pixel Art maker</h2>
           <img
-            onclick="window.location.href='https://samhgroves.github.io/pixel-art/';"
+            onclick="window.open('https://samhgroves.github.io/pixel-art/', '_blank');"
             src="/images/pixel-art.png"
             alt="Pixel Art Image"
             class="project-image"
           />
-          <button
+          <a
             class="projectbtn"
-            onclick="window.location.href='https://samhgroves.github.io/pixel-art/';"
+            href="https://samhgroves.github.io/pixel-art/"
+            target="blank"
           >
             Live Site
-          </button>
-          <button class="projectbtn">GitHub</button>
+          </a>
+          <a
+            href="https://github.com/samhgroves/pixel-art"
+            class="projectbtn github"
+            target="blank"
+          >
+            GitHub
+          </a>
         </div>
+
         <div class="project">
-          <h2>Pixel Art maker</h2>
+          <h2>SimpleWeather</h2>
           <img
-            src="/images/pixel-art.png"
+            onclick="window.open('https://samhgroves.github.io/simpleweather/', '_blank');"
+            src="/images/simpleweather.png"
             alt="Pixel Art Image"
             class="project-image"
           />
-          <button class="projectbtn">Live Site</button>
-          <button class="projectbtn">GitHub</button>
+          <a
+            class="projectbtn"
+            href="https://samhgroves.github.io/simpleweather/"
+            target="blank"
+          >
+            Live Site
+          </a>
+          <a
+            class="projectbtn github"
+            href="https://github.com/samhgroves/simpleweather"
+            target="blank"
+          >
+            GitHub
+          </a>
         </div>
+
         <div class="project">
-          <h2>Pixel Art maker</h2>
+          <h2>Todoit</h2>
           <img
-            src="/images/pixel-art.png"
-            alt="Pixel Art Image"
+            onclick="window.open('https://samhgroves.github.io/todoit/', '_blank');"
+            src="/images/todoit.svg"
+            alt="SimpleWeather Image"
             class="project-image"
           />
-          <button class="projectbtn">Live Site</button>
-          <button class="projectbtn">GitHub</button>
+          <a
+            class="projectbtn"
+            href="https://samhgroves.github.io/todoit/"
+            target="blank"
+          >
+            Live Site
+          </a>
+          <a
+            class="projectbtn github"
+            href="https://github.com/samhgroves/todoit"
+            target="blank"
+          >
+            GitHub
+          </a>
         </div>
         <div class="project">
-          <h2>Pixel Art maker</h2>
+          <h2>RockoCuts</h2>
           <img
-            src="/images/pixel-art.png"
-            alt="Pixel Art Image"
+            onclick="window.open('https://rockocuts.com/', '_blank');"
+            src="/images/rockocuts.png"
+            alt="RockoCuts image"
             class="project-image"
           />
-          <button class="projectbtn">Live Site</button>
-          <button class="projectbtn">GitHub</button>
+          <a class="projectbtn" href="https://rockocuts.com/" target="blank">
+            Live Site
+          </a>
+          <a
+            class="projectbtn github"
+            href="https://github.com/samhgroves/rockocuts"
+            target="blank"
+          >
+            GitHub
+          </a>
         </div>
       </div>
     </section>
+    <div class="footer"></div>
+    <script src="script.js"></script>
   </body>
   <footer></footer>
 </html>

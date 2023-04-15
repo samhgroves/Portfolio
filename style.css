@@ -1,7 +1,58 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #f1ffe7;
   font-family: "futura";
-  scroll-behavior: smooth;
+  padding: 0px;
+  margin: 0px;
+}
+
+.header {
+  height: 0rem;
+  visibility: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+.header.fixed {
+  visibility: visible;
+  height: 4rem;
+  width: 100%;
+  background-color: #03312e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+h3 {
+  padding: 0px;
+  margin: 0px;
+  margin-left: 2rem;
+  color: #66c7f4;
+  font-size: 30px;
+}
+
+.headerlinks {
+  margin-right: 1rem;
+  color: #f1ffe7;
+  display: flex;
+  justify-content: space-around;
+  width: 8rem;
+}
+
+.headerlinks > a {
+  text-decoration: none;
+  color: #f1ffe7;
+}
+
+a {
+  cursor: pointer;
 }
 
 #name {
@@ -37,8 +88,10 @@ body {
   border: none;
   border-radius: 50px;
   height: 5rem;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 900;
+  color: #f1ffe7;
+  border: 5px solid #03312e;
 }
 
 #navbtn:hover {
@@ -53,6 +106,11 @@ body {
   text-align: center;
   font-size: 50px;
   color: #ff1053;
+}
+
+#workheader {
+  margin-top: 5rem;
+  margin-bottom: -2rem;
 }
 
 #work,
@@ -75,7 +133,7 @@ body {
   width: 500px;
   object-fit: cover;
   border-radius: 300px;
-  border: 10px solid #037171;
+  border: 10px solid #03312e;
 }
 
 #bio {
@@ -99,7 +157,7 @@ body {
   flex-wrap: wrap;
 }
 
-#bio-buttons > button {
+.biobtn {
   display: flex;
   justify-content: center;
   width: 20rem;
@@ -136,7 +194,7 @@ body {
 }
 
 .project {
-  width: 35rem;
+  width: 40rem;
   height: auto;
   margin: 2rem;
   display: flex;
@@ -151,19 +209,38 @@ body {
 .project-image {
   width: 80%;
   margin-bottom: 1rem;
+  border-radius: 50px;
+  box-shadow: 10px 10px 0px #03312e;
 }
 
 .projectbtn {
-  width: 20rem;
+  width: 10rem;
   height: 3rem;
   background-color: #66c7f4;
   border: 0px;
   border-radius: 40px;
   margin: 0.5rem;
+  text-align: center;
+  line-height: 3rem;
+  color: black;
+  text-decoration: none;
+  font-size: 25px;
+  color: #f1ffe7;
+}
+
+.github {
+  background-color: #037171;
+  color: #f1ffe7;
 }
 
 .projectbtn:hover {
-  background-color: #037171;
+  background-color: #ff1053;
+}
+
+footer {
+  width: 100%;
+  height: 2rem;
+  background-color: #03312e;
 }
 @media screen and (max-width: 1000px) {
   #name {
@@ -193,6 +270,8 @@ body {
   }
   #splash-img {
     width: 80%;
+    margin-left: 0;
+    margin-right: 0;
   }
   #portrait {
     width: 400px;
