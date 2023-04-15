@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 558.3 558.3">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f1ffe7;
+      }
+
+      .cls-2 {
+        fill: #03312e;
+        font-family: Futura-Medium, Futura;
+        font-size: 249.67px;
+        font-weight: 500;
+      }
+    </style>
+  </defs>
+  <circle class="cls-1" cx="279.15" cy="279.15" r="279.15"/>
+  <text class="cls-2" transform="translate(101.23 365.61)"><tspan x="0" y="0">SG</tspan></text>
+</svg>
